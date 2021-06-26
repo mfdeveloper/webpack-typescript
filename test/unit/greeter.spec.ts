@@ -1,4 +1,4 @@
-import { Greeter } from '../src/scripts/greeter';
+import { Greeter } from '../../src/scripts/greeter';
 
 describe('Greeter', (): void => {
   let greeter: Greeter;
