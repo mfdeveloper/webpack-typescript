@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "webpack-typescript",
   "scripts": {
-    "start": "webpack serve --mode development --env development",
+    "start": "webpack serve --mode development --env development --hot",
     "start:prod": "npm run build && http-server dist -o",
     "watch": "webpack --watch",
     "prebuild": "npm run format",
