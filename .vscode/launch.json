@@ -8,9 +8,24 @@
             "url": "http://localhost:8080/index.html",
             "webRoot": "${workspaceFolder}/src",
             "sourceMaps": true,
-			"runtimeArgs": [
-				"--enable-unsafe-es3-apis"
-			]
+            "runtimeArgs": [
+                "--enable-unsafe-es3-apis"
+            ]
+        },
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch Firefox",
+            "preLaunchTask": "start",
+            "url": "http://localhost:8080/index.html",
+            "webRoot": "${workspaceFolder}/src",
+            "pathMappings": [
+                {
+                    "url": "webpack:///scripts",
+                    "path": "${workspaceFolder}/src/scripts"
+                }
+            ]
         },
         {
             "type": "node",

@@ -3,6 +3,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "eg2.vscode-npm-script",
-    "christian-kohler.npm-intellisense"
+    "christian-kohler.npm-intellisense",
+    "firefox-devtools.vscode-firefox-debug"
   ]
 }
