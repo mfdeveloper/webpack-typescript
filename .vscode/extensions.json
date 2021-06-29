@@ -4,6 +4,7 @@
     "esbenp.prettier-vscode",
     "eg2.vscode-npm-script",
     "christian-kohler.npm-intellisense",
-    "firefox-devtools.vscode-firefox-debug"
+    "firefox-devtools.vscode-firefox-debug",
+    "davidanson.vscode-markdownlint"
   ]
 }
