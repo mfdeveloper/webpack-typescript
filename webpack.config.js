@@ -109,5 +109,7 @@ const dev = {
 module.exports = (env) =>
     merge(
         base,
-        (env && env.production) || process.env.NODE_ENV == 'production' ? prod : dev
+        (env && env.production) || process.env.NODE_ENV == 'production'
+            ? prod
+            : dev
     );

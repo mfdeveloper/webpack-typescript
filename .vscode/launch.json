@@ -8,9 +8,7 @@
             "url": "http://localhost:8080/index.html",
             "webRoot": "${workspaceFolder}/src",
             "sourceMaps": true,
-            "runtimeArgs": [
-                "--enable-unsafe-es3-apis"
-            ]
+            "runtimeArgs": ["--enable-unsafe-es3-apis"]
         },
         {
             "type": "firefox",

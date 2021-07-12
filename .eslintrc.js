@@ -5,6 +5,8 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     parserOptions: {
         project: ['tsconfig.json'],
+        tsconfigRootDir: __dirname,
+        sourceType: "module"
     },
     env: {
         browser: true,
@@ -35,6 +37,7 @@ module.exports = {
             },
         ],
         '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/no-unsafe-member-access': 'warn',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/unbound-method': 'error',
         '@typescript-eslint/member-ordering': [
@@ -46,18 +49,30 @@ module.exports = {
                 },
             },
         ],
+        '@typescript-eslint/no-floating-promises': [
+            'error',
+            {
+                ignoreIIFE: true
+            },
+        ],
+        "@typescript-eslint/no-misused-promises": [
+            "error",
+            {
+                checksVoidReturn: false
+            }
+        ],
         '@typescript-eslint/explicit-member-accessibility': [
             'warn',
             {
                 accessibility: 'explicit',
                 overrides: {
-                  accessors: 'explicit',
-                  constructors: 'no-public',
-                  methods: 'no-public',
-                  properties: 'no-public',
-                  parameterProperties: 'explicit'
-                }
-            }
+                    accessors: 'explicit',
+                    constructors: 'no-public',
+                    methods: 'no-public',
+                    properties: 'no-public',
+                    parameterProperties: 'explicit',
+                },
+            },
         ],
     },
 };
